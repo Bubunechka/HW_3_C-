@@ -6,14 +6,22 @@
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-int i = 0;
+int i = 1;
 double result;
 while(i <= N)
 {
-    result = Math.Pow(N, 3);
-    i++;
+   result = Math.Pow(i, 3);
+   i++;
 
-    Console.WriteLine("Значение числа в кубе равно" + result);
+   Console.WriteLine("Значение числа в кубе равно " + result);
 }
 
-Console.WriteLine("Цикл завершил свою работу");
+//Console.WriteLine("Цикл завершил свою работу");
+
+// Console.WriteLine("Введите число: ");
+
+// double result;
+// for (int i = 1; i <= 3; i++)
+// {
+//     result = Math.Pow(i, 3);
+// }
