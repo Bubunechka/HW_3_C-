@@ -6,24 +6,17 @@
 Console.Write("Введите пятизначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int dig, sum;
-sum = 0;
+char [] arr = new char [5];
+arr = num.ToString().ToArray();
+//Console.WriteLine(arr[0]);
 
-int numnum = num;
-
-while (num > 0)
+if(arr[0] == arr[4] & arr[1] == arr[3])
 {
-    dig = num % 10;
-    sum = sum * 10 + dig;
-    num = num / 10;
-}
-
-if (numnum == num)
-{
-    Console.Write("Введенное число [{num}] является палиндромом");
+    Console.Write("Введенное число является палиндромом");
 }
 else
 {
  Console.Write("Введенное число не является палиндромом");   
 }
+
 
